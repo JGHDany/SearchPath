@@ -6,6 +6,7 @@ This is example of a complex project where I make use of the folowing concepts:
   - Sort and search algorithms 
   - Algorithm to find shortest path in a weighted graph (dijkstra and bfs)
   - Use of File I/O
+
 Description of some files in the project:
  - Nos.h file repersent a node in a graph with its respective informations.
  - Arcos.h file have informations about the edge in the graph and its possible information (head, tail, cost, distance, time),
