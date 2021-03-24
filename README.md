@@ -6,5 +6,8 @@ This is example of a complex project where I make use of the folowing concepts:
   - Sort and search algorithms 
   - Algorithm to find shortest path in a weighted graph (dijkstra and bfs)
   - Use of File I/O
-
-This project read a graph from a file (I manually generate this example, I have a picture of it graph.jpg) and using dijkstra and bfs algorithm to determine the best path acording with a user choice (cost, time or Distance). Note for this example source and destination need to be between 1 and 17.
+Description of some files in the project:
+ - Nos.h file repersent a node in a graph with its respective informations.
+ - Arcos.h file have informations about the edge in the graph and its possible information (head, tail, cost, distance, time),
+ - Network.h file have constructor to read a graph from a file, map the information, and construct the different dataset for node and edge of the graph, and at the end translate the information back to its original in the input file.
+ - grafo.cpp file is where the main program exists. Starting create the network reading from a file, ask for start and end of a path (the example values 1..17), and criteria of search (cost, time, distance). Test if the graph is connex, otherwise could not exist path between two elementes in a disconex graph. Then build the network and using dijkstra determine the shortest path according to that criteria of search. Finally get the optimal path and show it on screen with apropriate information.
